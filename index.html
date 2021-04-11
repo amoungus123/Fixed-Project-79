@@ -22,9 +22,18 @@
 
     <div class="row" id="viewblock">
         <div  class="img_div"> 
-            <img class="img-responsive"  src="images/pizza.png">
+            <img class="img-responsive"  src="pizza.png">
         </div>
-      <!-- Add menu_div here and create button to call getmenu() -->
+      <div class="menu_div">
+          <button id="menu_list" onclick="getmenu()">Show Menu</button>
+          <ol>
+              <li>Chicken Tandoori Pizza</li>
+              <li>Veg Supreme Pizza</li>
+              <li>Paneer Tikka Pizza</li>
+              <li>Deluxe Veggie Pizza</li>
+              <li>Veg Extravaganza Pizza</li>
+          </ol>
+      </div>
     </div>
     
     <div class="newRow" id="addTopings">
@@ -34,9 +43,13 @@
         </div>
         
     </div>
-     <!-- Add display_addedmenu div here! -->
+    <div id="display_menu"></div>
+    <div class="block">
+        <div id="display_addedmenu">
+        </div>
+    </div>
     <div>
-        <img class="img-responsive"  src="images/topping.png">
+        <img class="img-responsive"  src="topping.png">
     </div>
 
 </body>
